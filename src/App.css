@@ -1,0 +1,17 @@
+.app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.button {
+	background-color: #23374c;
+	color: #fff;
+	padding: 10px 13px;
+	/* border-radius: 3px; */
+	transition: all 0.2s ease;
+}
+
+.button:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Merriweather:wght@400;700&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Merriweather', sans-serif;
+	font-size: 18px;
+	color: #23374c;
+}
+
+#root {
+	height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+	color: inherit;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+button {
+	border: none;
+	font-family: 'Fira Sans', sans-serif;
+	cursor: pointer;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* @media (max-width: 767.98px) {
+	.container {
+		max-width: none;
+		padding: 0 10px;
+	}
+} */

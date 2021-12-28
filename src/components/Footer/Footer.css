@@ -1,0 +1,10 @@
+.footer {
+	font-family: 'Fira Sans', sans-serif;
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+.footer-body {
+	text-align: right;
+	/* padding: 0 15px; */
+}

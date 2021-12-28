@@ -1,0 +1,1 @@
+export { Inform } from './Inform';
