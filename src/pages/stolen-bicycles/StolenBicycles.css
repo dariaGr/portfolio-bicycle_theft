@@ -1,0 +1,45 @@
+.bicycles {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	background-color: #91dba3;
+}
+
+.bicycles-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.bicycles-content {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.bicycles-table {
+	margin: 30px 0px 0px 0px;
+
+	border: 1px solid grey;
+	display: inline-block;
+}
+.bicycles-table th {
+	border: 1px solid grey;
+}
+.bicycles-table td {
+	border: 1px solid grey;
+}
+
+.bicycles-back {
+	border: 1px solid grey;
+	padding: 10px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	transition: all 0.3s ease;
+	border-radius: 3px;
+}
+
+.bicycles-back:hover {
+	background-color: #def4e4;
+}

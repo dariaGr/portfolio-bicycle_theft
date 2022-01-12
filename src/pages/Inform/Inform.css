@@ -1,0 +1,57 @@
+.inform {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	background-color: #91dba3;
+}
+
+.inform-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.inform-content {
+	text-align: center;
+	margin: 30px 0px 0px 0px;
+}
+
+.inform-form {
+	display: inline-block;
+	margin-top: 30px;
+}
+
+.form-column {
+	display: flex;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+.form-column input {
+	display: block;
+	margin-top: 5px;
+	height: 30px;
+	padding: 5px;
+	border-radius: 3px;
+	border: none;
+}
+
+.form-column select {
+	border-radius: 3px;
+	border: none;
+	height: 30px;
+	margin-top: 5px;
+}
+
+.form-column textarea {
+	resize: none;
+	margin-top: 5px;
+	height: 100px;
+	padding: 5px;
+	border-radius: 3px;
+	border: none;
+}
+
+.form button {
+	margin-top: 45px;
+}
