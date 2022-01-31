@@ -1,1 +1,0 @@
-export { Inform } from './Inform';

@@ -1,0 +1,32 @@
+.inform-employee {
+	display: flex;
+	min-height: 100%;
+	flex-direction: column;
+	background-color: #91dba3;
+}
+
+.inform-employee-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.inform-employee-button {
+    margin-top: 35px;
+}
+
+.inform-employee-back {
+	border: 1px solid grey;
+	padding: 10px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	transition: all 0.3s ease;
+	border-radius: 3px;
+}
+
+.inform-employee-back:hover {
+	background-color: #def4e4;
+}

@@ -13,13 +13,13 @@ export const Header = () => {
 					<nav className="header-menu">
 						<ul className="menu-list">
 							<li className="menu-item">
-								<Link to="/reg" className="menu-link">
-									Вход
+								<Link to="/log" className="menu-link">
+									Log in
 								</Link>
 							</li>
 							<li className="menu-item">
 								<Link to="/auth" className="menu-link">
-									Регистрация
+									Sign up
 								</Link>
 							</li>
 						</ul>

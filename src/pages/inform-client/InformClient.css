@@ -1,22 +1,17 @@
-.registration {
+.inform-client {
 	display: flex;
 	min-height: 100%;
 	flex-direction: column;
 	background-color: #91dba3;
 }
 
-.reg-container {
+.inform-client-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-direction: column;
 }
 
-.reg-content {
-	text-align: center;
-	margin-top: 30px;
-}
-
-.reg-form {
-	display: inline-block;
-	margin-top: 30px;
+.inform-client-button {
+	margin-top: 35px;
 }

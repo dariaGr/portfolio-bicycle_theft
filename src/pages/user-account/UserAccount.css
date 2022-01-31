@@ -20,6 +20,10 @@
 	align-items: center;
 }
 
+.user-account-title {
+	margin-bottom: 35px;
+}
+
 .user-account-info {
 	/* display: inline-block; */
 }
