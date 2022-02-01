@@ -17,9 +17,7 @@ export const Login = () => {
 				email,
 				password
 			})
-			// console.log(response.data.data.token)
 			setToken(response.data.data.token)
-			// console.log(token)
 			setSuccess(true)
 		} catch (e) {
 			console.log(e)
@@ -27,13 +25,13 @@ export const Login = () => {
 	}
 
 	const logForm = <div className="log-form form">
-		<h1 className="log-title">Вход в личный кабинет</h1>
+		<h1 className="log-title">Log in</h1>
 		<div className="form-column">
-			<label for="login">Логин:</label>
+			<label for="login">Username:</label>
 			<input type="text" id="login" value={email} onChange={(event) => setEmail(event.target.value)} />
 		</div>
 		<div className="form-column">
-			<label for="password">Пароль:</label>
+			<label for="password">Password:</label>
 			<input type="password" id="password" value={password} onChange={(event) => setPassword(event.target.value)} />
 		</div>
 		<button className="button" type="submit" onClick={() => { login(email, password) }}>Войти</button>
@@ -45,7 +43,7 @@ export const Login = () => {
 			<main className="log-container">
 				<div className="container">
 					<div className="log-content">
-						{success ? <><h1 className="log-title">Вход прошел успешно!</h1><Link to={{ pathname: "/user-account", token: token }}><button className="success-button button" type='button'>Ok</button></Link></> : logForm}
+						{success ? <><h1 className="log-title">You have success logged in!</h1><Link to={{ pathname: "/user-account", token: token }}><button className="success-button button" type='button'>Ok</button></Link></> : logForm}
 					</div>
 				</div>
 			</main>

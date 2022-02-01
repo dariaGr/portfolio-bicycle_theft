@@ -10,6 +10,7 @@ import { StolenBicycles } from './pages/stolen-bicycles/StolenBicycles';
 import { BicycleDetails } from './pages/bicycle-details';
 import { ResponsibleEmployees } from './pages/responsible-employees';
 import { EmployeeDetails } from './pages/employee-details/EmployeeDetails';
+import { NotFound } from './pages/not-found/NotFound';
 
 export const App = () => {
 
@@ -27,6 +28,7 @@ export const App = () => {
 				<Route path="/bicycle-details" component={BicycleDetails} />
 				<Route path="/responsible-employees" component={ResponsibleEmployees} />
 				<Route path="/employee-details" component={EmployeeDetails} />
+				<Route path="*" component={NotFound} />
 			</Switch>
 		</Router>
 	);

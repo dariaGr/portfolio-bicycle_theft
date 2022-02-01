@@ -30,13 +30,13 @@ export const Authorization = () => {
 
 	const regForm =
 		<div className="auth-form form">
-			<h1 className="auth-title">Регистрация на сайте</h1>
+			<h1 className="auth-title">Sign up</h1>
 			<div className="form-column">
 				<label htmlFor="email">E-mail:</label>
 				<input type="text" id="email" value={email} onChange={(event) => setEmail(event.target.value)} />
 			</div>
 			<div className="form-column">
-				<label htmlFor="password">Пароль:</label>
+				<label htmlFor="password">Password:</label>
 				<input
 					type="password"
 					id="password"
@@ -45,7 +45,7 @@ export const Authorization = () => {
 				/>
 			</div>
 			<div className="form-column">
-				<label htmlFor="firstName">Имя:</label>
+				<label htmlFor="firstName">First Name:</label>
 				<input
 					type="text"
 					id="firstName"
@@ -54,7 +54,7 @@ export const Authorization = () => {
 				/>
 			</div>
 			<div className="form-column">
-				<label htmlFor="lastName">Фамилия:</label>
+				<label htmlFor="lastName">Last Name:</label>
 				<input type="text" id="lastName" value={lastName} onChange={(event) => setLastName(event.target.value)} />
 			</div>
 			<div className="form-column">
@@ -62,10 +62,9 @@ export const Authorization = () => {
 				<input type="text" id="clientId" value={clientId} onChange={(event) => setClientId(event.target.value)} />
 			</div>
 			<button className="button" type="submit" onClick={() => registration(email, password, firstName, lastName, clientId)}>
-				Зарегистрироваться
+				Sign up
 			</button>
 		</div >
-
 
 	return (
 		<div className="authorization">
@@ -73,11 +72,10 @@ export const Authorization = () => {
 			<main className="auth-container">
 				<div className="container">
 					<div className="auth-content">
-						{success ? <><h1 className="auth-title">Регистрация прошла успешно!</h1><Link to="/user-account"><button className="success-button button" type='button'>Ok</button></Link></> : regForm}
+						{success ? <><h1 className="auth-title">You have successfully registered!</h1><Link to="/user-account"><button className="success-button button" type='button'>Ok</button></Link></> : regForm}
 					</div>
 				</div>
 			</main>
-
 			<Footer />
 		</div>
 	);

@@ -1,0 +1,12 @@
+.not-found {
+    background-color: #91dba3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.not-found h1 {
+    margin-bottom: 30px;
+}
