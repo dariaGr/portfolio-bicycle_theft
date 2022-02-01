@@ -20,9 +20,7 @@ export const BicycleDetails = () => {
 		try {
 			const response = await axios.get(`https://sf-final-project.herokuapp.com/api/cases/${postId}`, { headers: { "Authorization": `Bearer ${token}` } })
 				.then(res => {
-					// console.log(res.data.data)
 					setPost(res.data.data)
-					// console.log(post.color)
 
 				})
 			setLoading(true)
@@ -48,7 +46,6 @@ export const BicycleDetails = () => {
 	}
 
 	const handleSend = () => {
-		// console.log(`${field}`)
 		putFunc(postId)
 		setToggle(false)
 		getStolenBicycleFunc(postId)
@@ -61,10 +58,10 @@ export const BicycleDetails = () => {
 		<table>
 			<tbody>
 				<tr>
-					{toggle ? <div>{inputField}<button onClick={handleSend}>Send</button></div> : <td>{post.ownerFullName}</td>}<td><button type="button" className='button' onClick={handleClick}>Редактировать</button></td>
+					{toggle ? <div>{inputField}<button onClick={handleSend}>Send</button></div> : <td>{post.ownerFullName}</td>}<td><button type="button" className='button' onClick={handleClick}>Edit</button></td>
 				</tr>
 				<tr>
-					<td>{post.licenseNumber}</td><td><button type="button" className='button'>Редактировать</button></td>
+					<td>{post.licenseNumber}</td><td><button type="button" className='button'>Edit</button></td>
 				</tr>
 				<tr>
 					<td>{post.clientId}</td>
@@ -76,22 +73,22 @@ export const BicycleDetails = () => {
 					<td>{post.updatedAt}</td>
 				</tr>
 				<tr>
-					<td>{post.type}</td><td><button type="button" className='button'>Редактировать</button></td>
+					<td>{post.type}</td><td><button type="button" className='button'>Edit</button></td>
 				</tr>
 				<tr>
-					<td>{post.color}</td><td><button type="button" className='button'>Редактировать</button></td>
+					<td>{post.color}</td><td><button type="button" className='button'>Edit</button></td>
 				</tr>
 				<tr>
-					<td>{post.date}</td><td><button type="button" className='button'>Редактировать</button></td>
+					<td>{post.date}</td><td><button type="button" className='button'>Edit</button></td>
 				</tr>
 				<tr>
-					<td>{post.officer}</td><td><button type="button" className='button'>Редактировать</button></td>
+					<td>{post.officer}</td><td><button type="button" className='button'>Edit</button></td>
 				</tr>
 				<tr>
-					<td>{post.description}</td><td><button type="button" className='button'>Редактировать</button></td>
+					<td>{post.description}</td><td><button type="button" className='button'>Edit</button></td>
 				</tr>
 				<tr>
-					<td>{post.resolution}</td><td><button type="button" className='button'>Редактировать</button></td>
+					<td>{post.resolution}</td><td><button type="button" className='button'>Edit</button></td>
 				</tr>
 			</tbody>
 		</table >
@@ -103,9 +100,9 @@ export const BicycleDetails = () => {
 				<div className="container">
 					<div className="bicycles-content">
 						<Link className="bicycles-back" to="/user-account">
-							Назад
+							Back
 						</Link>
-						<h1 className="bicycles-title">Детальная страница сообщения о краже</h1>
+						<h1 className="bicycles-title">Detailed page of the theft report</h1>
 						{loading ? list : <Spinner />}
 					</div>
 				</div>

@@ -1,6 +1,6 @@
 import './ResponsibleEmployees.css';
 import { Header } from '../../components/Header';
-import {Footer} from '../../components/Footer';
+import { Footer } from '../../components/Footer';
 import { Link } from 'react-router-dom';
 
 export const ResponsibleEmployees = () => {
@@ -11,25 +11,25 @@ export const ResponsibleEmployees = () => {
 				<div className="container">
 					<div className="employees-content">
 						<Link className="employees-back" to="/user-account">
-							Назад
+							Back
 						</Link>
-						<h1 className="employees-title">Ответственные сотрудники</h1>
+						<h1 className="employees-title">Responsible employees</h1>
 						<table className="employees-table">
 							<tr>
-								<th>Сотрудник</th>
-								<th>Подробнее</th>
+								<th>Employee</th>
+								<th>Detail</th>
 							</tr>
 							<tr>
-								<td>Сотрудник №1</td>
-								<td>данные</td>
+								<td>Employee</td>
+								<td>Detail</td>
 							</tr>
 							<tr>
-								<td>Сотрудник №2</td>
-								<td>данные</td>
+								<td>Employee</td>
+								<td>Detail</td>
 							</tr>
 							<tr>
 								<td>Сотрудник №3</td>
-								<td>данные</td>
+								<td>Detail</td>
 							</tr>
 						</table>
 					</div>

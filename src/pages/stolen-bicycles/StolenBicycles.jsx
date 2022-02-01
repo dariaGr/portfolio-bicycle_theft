@@ -11,16 +11,13 @@ export const StolenBicycles = () => {
 	const token = location.token
 
 	const [posts, setPosts] = useState([])
-	// const [post, setPost] = useState()
 	const [loading, setLoading] = useState(false)
 
 	const getStolenBicyclesFunc = async () => {
 		try {
 			const response = await axios.get(`https://sf-final-project.herokuapp.com/api/cases`, { headers: { "Authorization": `Bearer ${token}` } })
 				.then(res => {
-					// console.log(res.data.data)
 					setPosts(res.data.data)
-
 				})
 			setLoading(true)
 		} catch (e) {
@@ -37,9 +34,6 @@ export const StolenBicycles = () => {
 			axios
 				.delete(`https://sf-final-project.herokuapp.com/api/cases/${post._id}`, { headers: { "Authorization": `Bearer ${token}` } })
 				.then(response => {
-					// window.confirm(`Delete ${post}?`);
-					// setPosts(null)
-					// getPosts
 				});
 		} catch (e) {
 			console.log(e)
@@ -59,7 +53,7 @@ export const StolenBicycles = () => {
 						<td><Link to={{ pathname: "/bicycle-details", token: token, postId: post._id }}>{post.type}</Link></td>
 						<td><Link to={{ pathname: "/bicycle-details", token: token, postId: post._id }}>{post.color}</Link></td>
 						<td><Link to={{ pathname: "/bicycle-details", token: token, postId: post._id }}>{post.date}</Link></td>
-						<td><button type="button" className='button' onClick={() => handleDelete(post)}>Удалить</button></td>
+						<td><button type="button" className='button' onClick={() => handleDelete(post)}>Delete</button></td>
 					</tr>
 				);
 			})}
@@ -73,9 +67,9 @@ export const StolenBicycles = () => {
 				<div className="container">
 					<div className="bicycles-content">
 						<Link className="bicycles-back" to="/user-account">
-							Назад
+							Back
 						</Link>
-						<h1 className="bicycles-title">Сообщения о кражах</h1>
+						<h1 className="bicycles-title">Theft reports</h1>
 						{loading ? table : <Spinner />}
 					</div>
 				</div>

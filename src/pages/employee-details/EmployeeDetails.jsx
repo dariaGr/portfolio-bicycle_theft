@@ -7,7 +7,7 @@ export const EmployeeDetails = () => {
 		<div>
 			<Header />
 			<main>
-				<h1>Детальная страница сотрудника</h1>
+				<h1>Detailed page of the theft employee</h1>
 			</main>
 			<Footer />
 		</div>

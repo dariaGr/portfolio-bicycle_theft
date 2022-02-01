@@ -23,9 +23,11 @@
 	border: 1px solid grey;
 	display: inline-block;
 }
+
 .employees-table th {
 	border: 1px solid grey;
 }
+
 .employees-table td {
 	border: 1px solid grey;
 }

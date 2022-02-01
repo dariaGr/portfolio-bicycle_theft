@@ -13,21 +13,21 @@ export const UserAccount = () => {
 			<main className="user-account-container">
 				<div className="container">
 					<div className="user-account-content">
-						<h1 className="user-account-title">Учетная запись</h1>
+						<h1 className="user-account-title">User account</h1>
 						<div className="user-account-info">
 							<Link to="/inform-employee">
 								<button className="inform-button button" type="button">
-									Сообщить о краже
+									Report a theft
 								</button>
 							</Link>
 							<Link to={{ pathname: "/stolen-bicycles", token: token }}>
 								<div className="user-account-desc">
-									<p>Сообщения о кражах</p>
+									<p>Theft reports</p>
 								</div>
 							</Link>
 							<Link to="/responsible-employees">
 								<div className="user-account-desc">
-									<p>Ответственные сотрудники</p>
+									<p>Responsible employees</p>
 								</div>
 							</Link>
 						</div>
